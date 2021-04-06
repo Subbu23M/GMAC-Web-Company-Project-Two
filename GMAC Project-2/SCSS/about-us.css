@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Piazzolla', serif;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Piazzolla', serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+#carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#carousel .content {
+  margin-bottom: 15%;
+}
+
+#history {
+  background: url(../Images/bg-aboutus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#history .height {
+  min-height: 50vh;
+}
+
+#instagram {
+  background: url(../Images/instagram.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#instagram .height {
+  min-height: 25vh;
+}
+
+#instagram .button {
+  margin-top: 6%;
+}
+
+#instagram .button span {
+  font-size: 1.2rem;
+}
+
+footer .fa-home,
+footer .fa-envelope,
+footer .fa-phone-alt {
+  width: 50%;
+  height: 50%;
+  background-color: lightsalmon;
+  border-radius: 2rem;
+  padding: .1rem;
+  font-size: 2.1rem;
+}
+
+footer .social-one .fa-amazon-pay,
+footer .social-one .fa-cc-mastercard,
+footer .social-one .fa-cc-visa,
+footer .social-one .fa-cc-paypal {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 2px;
+  color: lightslategray;
+  margin-bottom: -1%;
+}
+
+footer .social .fa-facebook,
+footer .social .fa-twitter,
+footer .social .fa-pinterest,
+footer .social .fa-youtube,
+footer .social .fa-instagram {
+  color: lightsalmon;
+  font-size: 20px;
+  margin: 3px;
+  margin-bottom: -1%;
+}
+
+footer .social .fa-facebook:hover,
+footer .social .fa-twitter:hover,
+footer .social .fa-pinterest:hover,
+footer .social .fa-youtube:hover,
+footer .social .fa-instagram:hover {
+  color: lightslategray;
+}
+/*# sourceMappingURL=about-us.css.map */

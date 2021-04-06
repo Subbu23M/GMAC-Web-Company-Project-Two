@@ -1,0 +1,311 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Piazzolla', serif;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Piazzolla', serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+#grid .card {
+  position: relative;
+  cursor: pointer;
+}
+
+#grid .card .image-info {
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+}
+
+#grid .card .head-two {
+  position: absolute;
+  bottom: 8%;
+  left: 10%;
+}
+
+#grid .card .head-three {
+  position: absolute;
+  bottom: 8%;
+  left: 4%;
+}
+
+#grid .column {
+  margin-top: -270px;
+}
+
+#grid .card:hover img {
+  opacity: 0.6;
+}
+
+#products .underline {
+  width: 220px;
+  height: .3rem;
+}
+
+#products .card {
+  position: relative;
+}
+
+#products .card .image-left {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+#products .card .image-left .btn {
+  background-color: #8b5b1d;
+}
+
+#products .card .image-right {
+  position: absolute;
+  left: 75%;
+  top: 1%;
+  opacity: 0;
+  height: 150px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#products .card .image-right .fa-eye:hover,
+#products .card .image-right .fa-heart:hover,
+#products .card .image-right .fa-shopping-basket:hover {
+  width: 40px;
+  color: lightyellow;
+  background-color: #56a856;
+  padding: 5px;
+}
+
+#products .card .image-right .title {
+  border: none;
+}
+
+#products .card .image-right .icon:hover {
+  cursor: pointer;
+}
+
+#products .card .card-body {
+  margin-top: -100px;
+}
+
+#products .card .card-body .card-title h3:hover {
+  cursor: pointer;
+  color: #518651;
+}
+
+#products .card .card-footer .stars .fa-star:hover {
+  color: #F1C407;
+}
+
+#products .card .card-footer .strike {
+  text-decoration: line-through;
+}
+
+#products .card:hover {
+  outline: 3px solid lightgrey;
+}
+
+#products .card:hover .image-right {
+  opacity: 1;
+}
+
+#bg-middle .button .btn {
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+  position: relative;
+  display: block;
+}
+
+#bg-middle .button .btn:hover {
+  color: lightyellow;
+}
+
+#bg-middle .button .btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  /* z-index:stacks one on each other based on value  */
+  z-index: -1;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+          transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+#bg-middle .btn-one::before {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+#bg-middle .btn-one:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#deal {
+  margin-top: -25px;
+}
+
+#deal .underline-two {
+  width: 300px;
+  height: .3rem;
+}
+
+#dotw {
+  margin-top: -80px;
+}
+
+#dotw .item .card {
+  position: relative;
+}
+
+#dotw .item .card .image-left {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+#dotw .item .card .image-left .btn {
+  background-color: #2e6e2e;
+}
+
+#dotw .item .card .image-right {
+  position: absolute;
+  left: 75%;
+  top: 1%;
+  opacity: 0;
+  height: 150px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#dotw .item .card .image-right .fa-eye:hover,
+#dotw .item .card .image-right .fa-heart:hover,
+#dotw .item .card .image-right .fa-shopping-basket:hover {
+  width: 40px;
+  color: lightyellow;
+  background-color: #56a856;
+  padding: 5px;
+}
+
+#dotw .item .card .image-right .title {
+  border: none;
+}
+
+#dotw .item .card .image-right .icon:hover {
+  cursor: pointer;
+}
+
+#dotw .item .card .card-body {
+  margin-top: -100px;
+}
+
+#dotw .item .card .card-body .card-title h3:hover {
+  cursor: pointer;
+  color: #518651;
+}
+
+#dotw .item .card .card-footer .stars .fa-star:hover {
+  color: #F1C407;
+}
+
+#dotw .item .card .card-footer .strike {
+  text-decoration: line-through;
+}
+
+#dotw .item .card:hover .image-right {
+  opacity: 1;
+}
+
+.button-container .prev-btn,
+.button-container .next-btn {
+  border-color: transparent;
+  background-color: transparent;
+  color: #8bcbf9;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}
+
+.button-container .prev-btn:hover,
+.button-container .next-btn:hover {
+  color: #c7e3f5;
+}
+
+#footer {
+  min-height: 50vh;
+  background: url(../Images/bg-footer.jpg);
+}
+
+#footer .footer-links h5 a {
+  color: grey;
+}
+
+#footer .footer-links h5 a:hover {
+  color: #518651;
+}
+
+#footer .social-one .fa-amazon-pay,
+#footer .social-one .fa-cc-mastercard,
+#footer .social-one .fa-cc-visa,
+#footer .social-one .fa-cc-paypal {
+  font-size: 15px;
+  cursor: pointer;
+  margin: 2px;
+  color: whitesmoke;
+}
+
+#footer .social .fa-facebook,
+#footer .social .fa-twitter,
+#footer .social .fa-pinterest,
+#footer .social .fa-youtube,
+#footer .social .fa-instagram {
+  color: lightgrey;
+  font-size: 20px;
+  margin: 3px;
+}
+
+#footer .social .fa-facebook:hover,
+#footer .social .fa-twitter:hover,
+#footer .social .fa-pinterest:hover,
+#footer .social .fa-youtube:hover,
+#footer .social .fa-instagram:hover {
+  color: whitesmoke;
+}
+
+#grid,
+#review {
+  background: url(../Images/bg-main.jpg);
+  background-size: cover;
+}
+
+.link:hover {
+  color: lightslategrey;
+}
+/*# sourceMappingURL=main.css.map */

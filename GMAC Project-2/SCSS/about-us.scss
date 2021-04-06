@@ -1,0 +1,125 @@
+// Universal Affects
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Piazzolla', serif;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    font-family: 'Piazzolla', serif;
+}
+
+button:focus {
+    outline: none;
+}
+
+// For Carousel
+#carousel{
+    margin-left: -15px;
+    margin-right: -15px;
+
+    .content{
+        margin-bottom: 15%;
+    }
+
+}
+
+// For History Section
+#history{
+
+    background: url(../Images/bg-aboutus.png);
+    background-repeat: no-repeat;
+
+    //If we use cover; it will cut off the sides of the image, preserving the aspect ratio,and also filling in the space.
+    background-size: cover;
+
+    background-position: center;
+
+    .height{
+        min-height: 50vh;
+    }
+
+}
+
+// For instagram Section
+#instagram{
+
+    background: url(../Images/instagram.jpg);
+    background-repeat: no-repeat;
+
+    //If we use cover; it will cut off the sides of the image, preserving the aspect ratio,and also filling in the space.
+    background-size: cover;
+
+    background-position: center;
+
+    .height{
+        min-height: 25vh;
+    }
+
+    .button{
+        margin-top: 6%;
+
+        span{
+            font-size: 1.2rem;
+        }
+    }
+
+}
+
+// For footer
+footer{
+    .fa-home,
+    .fa-envelope,
+    .fa-phone-alt{
+        width: 50%;
+        height: 50%;
+        background-color: lightsalmon;
+        border-radius: 2rem;
+        padding: .1rem;
+        font-size: 2.1rem;
+    }
+
+    .social-one {
+
+        .fa-amazon-pay,
+        .fa-cc-mastercard,
+        .fa-cc-visa,
+        .fa-cc-paypal {
+            font-size: 20px;
+            cursor: pointer;
+            margin: 2px;
+            color: lightslategray;
+            margin-bottom: -1%;
+        }
+    }
+
+    .social {
+
+        .fa-facebook,
+        .fa-twitter,
+        .fa-pinterest,
+        .fa-youtube,
+        .fa-instagram {
+            color: lightsalmon;
+            font-size: 20px;
+            margin: 3px;
+            margin-bottom: -1%;
+
+            &:hover {
+                color: lightslategray;
+            }
+        }
+    }
+}
